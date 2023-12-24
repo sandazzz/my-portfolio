@@ -4,7 +4,7 @@
   <div class="flex flex-col items-center">
     <div
       class="hero min-h-screen"
-      style="background-image: url(../src/img/Dublin.jpg)"
+      style="background-image: url(img/Dublin.jpg)"
     >
       <div class="hero-overlay bg-[#C2E5FF] bg-opacity-60"></div>
       <div class="hero-content flex-col text-center text-violet-900">
@@ -33,7 +33,7 @@
     <div
       class="hero min-h-screen rotate-180"
       style="
-        background-image: url(../../public/img/best-ways-to-marvel-at-iconic-victoria-harbour-1920x1080.jpg);
+        background-image: url(img/best-ways-to-marvel-at-iconic-victoria-harbour-1920x1080.jpg);
       "
     >
       <div class="hero-overlay bg-[#C2E5FF] bg-opacity-60"></div>
