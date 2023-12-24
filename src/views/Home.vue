@@ -29,11 +29,11 @@
     </div>
   </div>
 
-  <div class="flex flex-col items-center">
+  <!--<div class="flex flex-col items-center">
     <div
       class="hero min-h-screen rotate-180"
       style="
-        background-image: url(img/best-ways-to-marvel-at-iconic-victoria-harbour-1920x1080.jpg);
+        background-image: url(img/Honk-kong.jpg);
       "
     >
       <div class="hero-overlay bg-[#C2E5FF] bg-opacity-60"></div>
@@ -69,9 +69,10 @@
         </div>
 
         <div class="flex flex-row justify-around w-full">
-          
+
         </div>
       </div>
     </div>
   </div>
+  -->
 </template>
