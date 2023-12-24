@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <!--<div class="flex flex-col items-center">
+  <div class="flex flex-col items-center">
     <div
       class="hero min-h-screen rotate-180"
       style="
@@ -74,5 +74,5 @@
       </div>
     </div>
   </div>
-  -->
+  
 </template>
