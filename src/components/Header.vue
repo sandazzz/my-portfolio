@@ -1,9 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <div class="navbar bg-base-100 fixed">
+  <div class="navbar bg-base-100 fixed z-10 text-violet-800">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -26,7 +24,10 @@
           tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><router-link :to="{name: 'home'}">Home</router-link></li>
+          <li><router-link :to="{ name: 'home' }">Home</router-link></li>
+          <li><a href="https://github.com/sandazzz/" target="_blank">My GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sandarisoa-rakotovelo-698b90255/" target="_blank">My Linked-in</a></li>
+          <li><a href="mailto:rsandarisoa@gmail.com">E-mail</a></li>
 
         </ul>
       </div>
