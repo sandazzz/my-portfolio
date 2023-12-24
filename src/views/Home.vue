@@ -33,7 +33,7 @@
     <div
       class="hero min-h-screen rotate-180"
       style="
-        background-image: url(../../public/best-ways-to-marvel-at-iconic-victoria-harbour-1920x1080.jpg);
+        background-image: url(../../public/img/best-ways-to-marvel-at-iconic-victoria-harbour-1920x1080.jpg);
       "
     >
       <div class="hero-overlay bg-[#C2E5FF] bg-opacity-60"></div>
