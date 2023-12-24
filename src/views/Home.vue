@@ -4,7 +4,7 @@
   <div class="flex flex-col items-center">
     <div
       class="hero min-h-screen"
-      style="background-image: url(img/Dublin.jpg)"
+      style="background-image: url(public/img/Dublin.jpg)"
     >
       <div class="hero-overlay bg-[#C2E5FF] bg-opacity-60"></div>
       <div class="hero-content flex-col text-center text-violet-900">
