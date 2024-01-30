@@ -2,8 +2,16 @@
 
 <template>
   <header
-    class="flex justify-center w-full min-h-16 p-2 bg-base-100 fixed z-10 text-violet-800"
+    class="glass absolute top-0 w-full h-[100px] px-[80px] z-10 flex justify-between items-center"
   >
+    <!--<a href="#" class="logo"><span>My</span>Logo</a>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Our Team</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>-->
     <div class="flex justify-between w-4/6">
       <div class="">
         <div class="dropdown">
@@ -44,9 +52,35 @@
           </ul>
         </div>
       </div>
-      <div class="">
-        <a class="btn text-xl">Download my CV</a>
-      </div>
     </div>
   </header>
 </template>
+
+<style>
+header .logo {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: #ff2d75;
+}
+
+header nav {
+  display: flex;
+  gap: 25px;
+}
+
+header nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+header nav a.active,
+header nav a:hover {
+  color: #4fc3dc;
+}
+</style>
