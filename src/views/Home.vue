@@ -5,7 +5,7 @@ import ParticleBackgound from "@/components/ParticleBackgound.vue";
 <template>
   <div>
     <ParticleBackgound />
-    <!--<div
+    <div
       class="flex flex-col justify-center items-center absolute w-full h-[100vh] text-white"
     >
       <h1
@@ -39,7 +39,7 @@ import ParticleBackgound from "@/components/ParticleBackgound.vue";
           </button>
         </div>
       </div>
-    </div>-->
+    </div>
   </div>
 </template>
 

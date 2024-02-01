@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
-  <div class="bg">
-    <div class="bubbles">
+  <div class="absolute w-full h-[100vh] overflow-hidden">
+    <div class="bubbles relative flex">
       <span style="--i: 11"></span>
       <span style="--i: 12"></span>
       <span style="--i: 24"></span>
@@ -66,17 +66,6 @@
   </div>
 </template>
 <style>
-.bg {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.bubbles {
-  position: relative;
-  display: flex;
-}
 
 .bubbles span {
   position: relative;
