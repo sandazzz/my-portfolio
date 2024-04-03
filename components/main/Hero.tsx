@@ -1,10 +1,11 @@
 import React from "react";
-import { HeroLampContent } from "../sub/HeroLampContent";
+import { LampContainer } from "../ui/Lamp";
+import { HeroContext } from "@/components/sub/HeroContext";
 
 export default function Hero() {
   return (
-    <div className="relative flex flex-col h-full w-full">
-      <HeroLampContent />
-    </div>
+    <LampContainer>
+      <HeroContext />
+    </LampContainer>
   );
 }
