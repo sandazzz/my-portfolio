@@ -1,10 +1,8 @@
 "use client";
-import { cn } from "@/utils/cn";
-import Skill from "@/components/ui/Skill";
-/*import { slideInFromLeft } from "@/utils/motion";
-import { motion } from "framer-motion";*/
 
-export default function Skills({ className }: { className?: string }) {
+import Skill from "@/components/ui/Skill";
+
+export default function Skills() {
   const frontEndSkill = [
     { id: 1, skillName: "React" },
     { id: 2, skillName: "Vue.js" },
@@ -28,20 +26,18 @@ export default function Skills({ className }: { className?: string }) {
   ];
 
   return (
-    <div
-      className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
-        className
-      )}
+    <section
+      id="skills"
+      className="flex flex-col justify-center gap-3 min-h-screen relative overflow-hidden"
     >
-      <div className="relative z-50 flex md:-translate-y-80 flex-col items-center px-5 gap-11 text-white">
-        <h1 className="text-5xl md:text-6xl font-bold">Skills</h1>
-        <div className="flex flex-col md:flex-row justify-center  gap-8 md:gap-16">
+      <div className="flex flex-col justify-center items-center gap-11 text-white">
+        <h1 className="text-5xl  font-bold">Skills</h1>
+        <div className="flex flex-col md:flex-row justify-center  gap-8 md:gap-24">
           <Skill skillCategory={"Front-end"} listSkill={frontEndSkill} />
           <Skill skillCategory={"Back-end"} listSkill={backEndSkill} />
           <Skill skillCategory={"Other"} listSkill={otherSkill} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex flex-col">
         <Hero />
         <Skills />
-        <Projects />
+        {<Projects />}
       </div>
     </main>
   );
