@@ -10,7 +10,7 @@ export default async function HeroContext() {
       </h1>
 
       <p className="text-lg text-gray-400 my-5 max-w-[600px]">
-        I&apos;m a Full Stack Web Developper. <br />
+        I&apos;m a Full Stack Developper. <br />
         Check out my projects and skills.
       </p>
       <div className="flex max-w-full flex-wrap gap-2">
