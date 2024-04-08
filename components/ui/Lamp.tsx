@@ -90,7 +90,7 @@ export const LampContainer = ({ children, className, }: { children: React.ReactN
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
 
-      <div className="relative flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative flex -translate-y-80 flex-col items-center px-5 z-40 ">
         {children}
       </div>
     </div>

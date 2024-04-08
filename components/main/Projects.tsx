@@ -1,7 +1,6 @@
-import React from "react";
 import { AnimatedPinDemo } from "@/components/ui/3DPin";
 
-export default function Projects() {
+export default async function Projects() {
   return (
     <section className="flex flex-col items-center justify-center gap-3 min-h-screen relative overflow-hidden">
       <div>
