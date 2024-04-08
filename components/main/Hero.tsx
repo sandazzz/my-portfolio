@@ -1,6 +1,5 @@
-import React from "react";
 import { LampContainer } from "../ui/Lamp";
-import { HeroContext } from "@/components/sub/HeroContext";
+import HeroContext from "@/components/sub/HeroContext";
 
 export default function Hero() {
   return (

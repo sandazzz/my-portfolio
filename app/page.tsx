@@ -4,12 +4,10 @@ import Projects from "@/components/main/Projects";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
-      <div className="flex flex-col">
-        <Hero />
-        <Skills />
-        {<Projects />}
-      </div>
+    <main className="min-h-screen w-full flex flex-col">
+      <Hero />
+      <Skills />
+      {<Projects />}
     </main>
   );
 }

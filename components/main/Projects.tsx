@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { AnimatedPinDemo } from "@/components/ui/3DPin";
 

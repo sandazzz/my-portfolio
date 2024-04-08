@@ -1,8 +1,6 @@
-"use client";
-
 import Skill from "@/components/ui/Skill";
 
-export default function Skills() {
+export default async function Skills() {
   const frontEndSkill = [
     { id: 1, skillName: "React" },
     { id: 2, skillName: "Vue.js" },
@@ -30,7 +28,7 @@ export default function Skills() {
       id="skills"
       className="flex flex-col justify-center gap-3 min-h-screen relative overflow-hidden"
     >
-      <div className="flex flex-col justify-center items-center gap-11 text-white">
+      <div className="flex flex-col justify-center items-center gap-20 text-white">
         <h1 className="text-5xl  font-bold">Skills</h1>
         <div className="flex flex-col md:flex-row justify-center  gap-8 md:gap-24">
           <Skill skillCategory={"Front-end"} listSkill={frontEndSkill} />
