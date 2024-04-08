@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default async function HeroContext() {
   return (
     <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
@@ -9,20 +11,30 @@ export default async function HeroContext() {
         </span>
       </h1>
 
-      <p className="text-lg text-gray-400 my-5 max-w-[600px]">
-        I&apos;m a Full Stack Developper. <br />
-        Check out my projects and skills.
+      <p className="font-medium text-gray-400 my-5 max-w-[600px]">
+        I am a Full Stack Developper <br />
+        I like leaning and trying new things <br />
+        Check out my projects and skills !
       </p>
       <div className="flex max-w-full flex-wrap gap-2">
-        <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
-          Linked-in
-        </button>
-        <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
-          Mail
-        </button>
-        <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
-          GitHub
-        </button>
+        <Link
+          href={"https://www.linkedin.com/in/sandarisoa-rakotovelo-698b90255/"}
+        >
+          <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
+            Linked-in
+          </button>
+        </Link>
+        <Link href="mailto:rsandarisoa@gmail.com">
+          <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
+            Mail
+          </button>
+        </Link>
+
+        <Link href={"https://github.com/sandazzz"}>
+          <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
+            GitHub
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-export default function Skill({
+export default function SkillColumn({
   skillCategory,
   listSkill,
 }: {
