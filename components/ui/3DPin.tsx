@@ -179,7 +179,7 @@ export function AnimatedPinDemo() {
               Customizable Tailwind CSS and Framer Motion Components.
             </span>
           </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+          <div className="flex flex-1 w-full rounded-lg mt-4 " />
         </div>
       </PinContainer>
     </div>
@@ -191,11 +191,13 @@ export function AnimatedPinCard({
   href,
   projectName,
   description,
+  className,
 }: {
   title: string;
   href: string;
   projectName: string;
   description: string;
+  className : string;
 }) {
   return (
     <div className="h-96 w-full flex items-center justify-center ">
@@ -207,7 +209,7 @@ export function AnimatedPinCard({
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-500 ">{description}</span>
           </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+          <div className={cn("flex flex-1 w-full rounded-lg mt-4 ", className)} />
         
         </div>
       </PinContainer>
