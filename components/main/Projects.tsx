@@ -16,24 +16,30 @@ export default async function Projects() {
       <div className="flex flex-col md:flex-row">
         <AnimatedPinCard
           title={"github.com/sandazzz/next-strix"}
-          href={"next-strix.vercel.app "}
+          href={"https://github.com/sandazzz/next-strix"}
           projectName={"Next-Strix"}
-          description={"An e-commerce web app build with Next js Stripe API and Vercel"}
+          description={
+            "An e-commerce web app build with Next js Stripe API and Vercel"
+          }
           className="bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
         />
         <AnimatedPinCard
           title={"github.com/sandazzz/ecochat-generator"}
-          href={""}
+          href={"https://github.com/sandazzz/ecochat-generator"}
           projectName={"Ecochat-generator"}
-          description={"A blog about the ecology combined with a chatbot. Built with Next js, Open AI API and Daisy UI. Still working on ..."}
+          description={
+            "A blog about the ecology combined with a chatbot. Built with Next js, Open AI API and Prisma. Still working on ..."
+          }
           className="bg-gradient-to-r from-cyan-500 to-blue-500"
         />
         <AnimatedPinCard
           title={"Still working on ..."}
-          href={"building ..."}
+          href={"#projects"}
           projectName={"Next-Finance Viewer"}
-          description={"A web app where you can check the stock market and check your wallet. Still working  on..."}
-          className="bg-gradient-to-r from-green-500 to-green-700"
+          description={
+            "A web app where you can check the stock market and check your wallet. Still working  on..."
+          }
+          className="bg-gradient-to-r from-green-500 to-green-700 pointer-events-none"
         />
       </div>
     </section>

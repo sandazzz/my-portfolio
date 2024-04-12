@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 
 export const PinContainer = ({
   children,
@@ -65,7 +66,7 @@ export const PinPerspective = ({
   href?: string;
 }) => {
   return (
-    <motion.div className="pointer-events-none  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+    <motion.div className="pointer-events-auto  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
         <div className="absolute top-0 inset-x-0  flex justify-center">
           <a
@@ -163,29 +164,6 @@ export const PinPerspective = ({
   );
 };
 
-export function AnimatedPinDemo() {
-  return (
-    <div className="h-96 w-full flex items-center justify-center ">
-      <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
-      >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            Aceternity UI
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
-          </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 " />
-        </div>
-      </PinContainer>
-    </div>
-  );
-}
-
 export function AnimatedPinCard({
   title,
   href,
@@ -197,7 +175,7 @@ export function AnimatedPinCard({
   href: string;
   projectName: string;
   description: string;
-  className : string;
+  className: string;
 }) {
   return (
     <div className="h-96 w-full flex items-center justify-center ">
@@ -209,8 +187,9 @@ export function AnimatedPinCard({
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-500 ">{description}</span>
           </div>
-          <div className={cn("flex flex-1 w-full rounded-lg mt-4 ", className)} />
-        
+          <div
+            className={cn("flex flex-1 w-full rounded-lg mt-4 ", className)}
+          />
         </div>
       </PinContainer>
     </div>
