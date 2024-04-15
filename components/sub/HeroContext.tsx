@@ -13,7 +13,7 @@ export default async function HeroContext() {
 
       <p className="font-medium text-gray-400 my-5 max-w-[600px]">
         I am a Full Stack Developper <br />
-        I like leaning and trying new things <br />
+        I like learning and trying new things <br />
         Check out my projects and skills !
       </p>
       <div className="flex max-w-full flex-wrap gap-2">
