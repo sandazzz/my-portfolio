@@ -16,7 +16,7 @@ export default async function Projects() {
       <div className="flex flex-col md:flex-row">
         <AnimatedPinCard
           title={"github.com/sandazzz/next-strix"}
-          href={"https://github.com/sandazzz/next-strix"}
+          href={"https://next-strix.vercel.app/"}
           projectName={"Next-Strix"}
           description={
             "An e-commerce web app build with Next js Stripe API and Vercel"
