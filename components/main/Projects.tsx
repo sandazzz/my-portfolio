@@ -24,8 +24,8 @@ export default async function Projects() {
           className="bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
         />
         <AnimatedPinCard
-          title={"github.com/sandazzz/ecochat-generator"}
-          href={"https://github.com/sandazzz/ecochat-generator"}
+          title={"Ecochat-Generator"}
+          href={"https://ecochat-generator.vercel.app/"}
           projectName={"Ecochat-generator"}
           description={
             "A blog about the ecology combined with a chatbot. Built with Next js, Open AI API and Prisma. Still working on ..."
