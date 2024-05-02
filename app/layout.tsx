@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/ui/StarBackground";
 import Header from "@/components/ui/Header";
+import GoogleAnalytics from "@/components/main/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <GoogleAnalytics />
       <body
         className={`${inter.className} bg-slate-950  overflow-y-scroll overflow-x-hidden`}
       >
