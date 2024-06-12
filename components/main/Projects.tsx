@@ -13,7 +13,7 @@ export default async function Projects() {
           </span>
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row justify-center">
         <AnimatedPinCard
           title={"Next-Strix"}
           href={"https://next-strix.vercel.app/"}
