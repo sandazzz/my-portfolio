@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default async function HeroContext() {
   return (
-    <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+    <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start relative z-50">
       <h1 className="mt-8 text-4xl text-white max-w-md">
         Hi, my name is
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">

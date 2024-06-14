@@ -7,7 +7,7 @@ export default async function SkillinLine({
 }) {
   return (
     <div className="mx-4 py-4 border-solid border-b-2 border-neutral-200">
-      <h2 className="font-bold text-2xl">{skillCategory}</h2>
+      <h2 className="text-2xl">{skillCategory}</h2>
       <div className="flex flex-wrap justify-start">
         {listSkill.map((item) => (
           <p className="font-medium mr-4" key={item.id}>
