@@ -6,13 +6,9 @@ export default async function Projects() {
       id="projects"
       className="flex flex-col items-center justify-center gap-3 min-h-screen relative overflow-hidden"
     >
-      <div>
-        <h1 className="text-white text-5xl font-bold">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            Projects
-          </span>
-        </h1>
-      </div>
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-5xl font-bold">
+        Projects
+      </h1>
       <div className="flex flex-col md:flex-row justify-center">
         <AnimatedPinCard
           title={"Next-Strix"}

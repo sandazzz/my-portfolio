@@ -22,9 +22,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-slate-950  overflow-y-scroll overflow-x-hidden`}
       >
-        {<StarsCanvas />}
         <Header />
         {children}
+        {<StarsCanvas />}
       </body>
     </html>
   );

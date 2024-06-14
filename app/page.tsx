@@ -1,6 +1,7 @@
 import Hero from "@/components/main/Hero";
 import Skills from "@/components/main/Skills";
 import Projects from "@/components/main/Projects";
+import { BentoGridDemo } from "@/components/ui/bento-grid";
 
 export default async function Home() {
   return (
@@ -8,6 +9,7 @@ export default async function Home() {
       <Hero />
       <Skills />
       <Projects />
+      {/*<BentoGridDemo></BentoGridDemo>*/}
     </main>
   );
 }

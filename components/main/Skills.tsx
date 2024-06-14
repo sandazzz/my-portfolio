@@ -1,5 +1,4 @@
-import SkillColumn from "@/components/ui/SkillColumn";
-import SkillinLine from "@/components/ui/SkillinLine";
+import SkillinLine from "@/components/ui/Skill-in-Line";
 
 export default async function Skills() {
   const frontEndSkill = [

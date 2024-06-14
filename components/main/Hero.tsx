@@ -3,7 +3,7 @@ import HeroContext from "@/components/sub/HeroContext";
 
 export default async function Hero() {
   return (
-    <section id="hero" className="min-h-screen">
+    <section id="hero">
       <LampContainer>
         <HeroContext />
       </LampContainer>
