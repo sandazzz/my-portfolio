@@ -1,6 +1,6 @@
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import { cn } from "@/utils/cn";
-//import Image from "next/image";
+import Image from "next/image";
 
 const Skeleton1 = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"></div>
@@ -13,7 +13,6 @@ const Skeleton2 = () => (
 const Skeleton3 = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-r from-green-500 to-green-700"></div>
 );
-
 /*const ProjectImg = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl">
     <Image

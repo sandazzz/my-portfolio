@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes shrinkWidth {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.hover\:animate-shrink:hover {
+  animation: shrinkWidth 0.4s ease-in-out forwards;
+}
+
+.hover\:animate-shrink {
+  animation: expandWidth 0.4s ease-in-out forwards;
+}
