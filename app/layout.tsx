@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StarsCanvas from "@/components/ui/StarBackground";
-import Header from "@/components/ui/Header";
+import StarsCanvas from "@/components/ui/star-background";
+import Header from "@/components/ui/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       {/*<GoogleAnalytics />*/}
       <body
-        className={`${inter.className} bg-slate-950  overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className} bg-slate-950`}
       >
         {<StarsCanvas />}
         <Header />
