@@ -1,5 +1,6 @@
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 const Skeleton1 = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"></div>
@@ -10,9 +11,23 @@ const Skeleton2 = () => (
 );
 
 const Skeleton3 = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-r from-gray-500 to-gray-700"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-r from-green-500 to-green-700"></div>
 );
-
+/*const ProjectImg = () => (
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl">
+    <Image
+      className="rounded-md"
+      fill
+      style={{
+        objectFit: "cover",
+      }}
+      sizes="100vw "
+      priority={true}
+      src="/public/assets/next-strix-image.png"
+      alt="Illustration"
+    />
+  </div>
+);*/
 export default async function ProjectsBento() {
   const items = [
     {
@@ -30,10 +45,10 @@ export default async function ProjectsBento() {
       header: <Skeleton2 />,
     },
     {
-      title: "Githread",
-      href: "https://githread-youtube-steel.vercel.app/",
+      title: "Next-Finance Viewer",
+      href: "#projects",
       description:
-        "A web app where you can make some post and log with your github account",
+        "A web app where you can check the stock market and check your wallet. I'am still working on...",
       header: <Skeleton3 />,
     },
   ];

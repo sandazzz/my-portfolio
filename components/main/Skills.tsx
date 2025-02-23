@@ -23,8 +23,9 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center items-center gap-8  text-white relative z-40 overflow-hidden "
+      className="flex flex-col justify-center gap-8 py-16 text-white relative z-40 overflow-hidden "
     >
+      <div className="flex flex-col justify-center items-center gap-10">
         <h1 className="text-transparent bg-clip-text bg-white text-4xl">
           Skills
         </h1>
@@ -33,6 +34,7 @@ export default function Skills() {
           <SkillinLine skillCategory="Back-end" listSkill={backEndSkill} />
           <SkillinLine skillCategory="Other" listSkill={otherSkill} />
         </div>
+      </div>
     </section>
   );
 }
