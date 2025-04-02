@@ -1,14 +1,14 @@
+import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StarsCanvas from "@/components/ui/StarBackground";
-import Header from "@/components/ui/Header";
+import { StarsCanvas } from "@/components/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "This is my Portfolio",
+  title: "Sanda's Portfolio",
+  description: "Full Stack Developer Portfolio",
 };
 
 export default function RootLayout({
@@ -18,13 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      {/*<GoogleAnalytics />*/}
-      <body
-        className={`${inter.className} bg-slate-950  overflow-y-scroll overflow-x-hidden`}
-      >
-        {<StarsCanvas />}
-        <Header />
-        {children}
+      <body className={`${inter.className} bg-slate-950`}>
+        <div className="relative">
+          <StarsCanvas />
+          <div className="relative z-10">{children}</div>
+        </div>
       </body>
     </html>
   );
