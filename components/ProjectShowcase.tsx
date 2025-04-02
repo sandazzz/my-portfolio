@@ -45,7 +45,7 @@ const projects: Project[] = [
   {
     title: "Onlyfriend",
     description:
-      "This is my personal social media, where I only have my friend. This a place where chat with them",
+      "A private social app to chat exclusively with close friends. It features real-time messaging using Socket.io, mobile-fist UI built with Vue.js and Tailwind, and a high-performance backend powered by Fastify and Prisma.",
     technologies: [
       "Typescript",
       "Vue.js",
@@ -55,8 +55,8 @@ const projects: Project[] = [
       "Socket.io",
       "PostgreSQL",
     ],
-    githubLink: "https://github.com/",
-    liveLink: "https://vercel.com",
+    githubLink: "https://github.com/sandazzz/onlyfriend",
+    liveLink: "https://onlyfriend.vercel.app",
   },
 ];
 
