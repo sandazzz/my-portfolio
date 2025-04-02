@@ -39,7 +39,7 @@ export default function LampSection() {
             </h2>
             <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base">
               <li>Frontend: Next.js + React, Vue.js ,Tailwind CSS</li>
-              <li>Backend: Express/Fastify, Prisma ,Symfony</li>
+              <li>Backend: Fastify, Prisma ,Symfony</li>
               <li>Database: PostgreSQL, Neon</li>
               <li>DevOps: Git, Github Action, Vercel ,Docker</li>
               <li>Mobile: React Native</li>
