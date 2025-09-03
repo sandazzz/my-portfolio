@@ -9,23 +9,33 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 interface Project {
   title: string;
   description: string;
   technologies: string[];
-  githubLink: string;
+  githubLink?: string;
   liveLink?: string;
+  image?: string;
 }
 
 const projects: Project[] = [
   {
-    title: "Next-Strix",
+    title: "Fake Care Dont Care App",
     description:
-      "An e-commerce web app build with Next js Stripe API and Vercel",
-    technologies: ["Nextjs", "Tailwind CSS", "Prisma", "PostgreSQL", "Stripe"],
-    githubLink: "https://github.com/sandazzz/next-strix",
-    liveLink: "https://next-strix.vercel.app/",
+      "Web application to replace the paper-based hair donation form (4k–6k donations per month): online submission, automatic generation of a unique order number with confirmation email, secure dashboard (search by order number, detailed donor view, donation reception confirmation, personalized email sending), monthly/yearly donation statistics.",
+    technologies: [
+      "Nextjs",
+      "Shadcn UI",
+      "Prisma",
+      "Better-Auth",
+      "Next-Safe-Action",
+      "PostgreSQL",
+      "Nodemailer",
+    ],
+    liveLink: "https://fake-hair-dont-care-app.vercel.app/",
+    image: "/fake-care-dont-care-dashboard.png",
   },
   {
     title: "Githread",
@@ -60,7 +70,7 @@ const projects: Project[] = [
   },
 ];
 
-export function ProjectShowcase() {
+export default async function ProjectShowcase() {
   return (
     <section className="py-12 md:mb-64" id="projects">
       <div className="container mx-auto px-4 ">
@@ -82,18 +92,34 @@ export function ProjectShowcase() {
                     </Badge>
                   ))}
                 </div>
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={500}
+                    height={500}
+                    className="rounded-md my-4"
+                  />
+                ) : null}
               </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button variant="outline" size="sm" asChild>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
-                </Button>
+              <CardFooter className="flex justify-between flex-wrap gap-2">
+                {project.githubLink ? (
+                  <Button variant="outline" size="sm" asChild>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      GitHub
+                    </a>
+                  </Button>
+                ) : (
+                  <Badge variant="destructive">
+                    This is a professional project so the code is not public
+                  </Badge>
+                )}
+
                 {project.liveLink && (
                   <Button variant="outline" size="sm" asChild>
                     <a
